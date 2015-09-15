@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- If you’re looking for the online demo, it’s here: http://mathiasbynens.be/demo/placeholder -->
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Narwi</title>
+		<style>
+			body, input, textarea { font: 1em/1.4 Helvetica, Arial; }
+			label code { cursor: pointer; float: left; width: 150px; }
+			
+			
+			/* #p { background: lime; } */
+		</style>
+	</head>
+	<body style="margin:0px;">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin:0 auto;text-align:center;">
+			<!-- header -->
+			 <tr>
+				  <td style="background-color:#4d4d4d;padding:10px 10%;" >
+				  	<div style="overflow:hidden;">
+				  		<a href="http://www.narwi.org" style="float:left;"><img src="<?= $this->client_url?>img/client_logo.png" ></a>
+				  		<!-- <a style="float:right;color:#ffffff;font-size:16px;padding:14px;text-decoration:none;" href="">View in Browser</a> -->
+				  	</div>
+				  </td>
+			 </tr>
+			 <!-- header ending -->
+			 <tr>
+			      <td style="background: #07acf6 url(<?= $this->client_url.'img/signup.jpg'?>) no-repeat 100%;  height: 200px;  padding: 94px 0px;">
+			       <!-- <img style="width:100%;" src="http://localhost/narwi/narwi-web-client/public/img/updateemail.jpg"> -->
+				       <div style="width:300px;width:300px;text-align:left;float:right;margin-right:10%;color:#ffffff;font-size:42px;">
+					       	<p style="font-size:38px;">WELCOME <?= $this->user['fullName'];?></p>
+							<small style="font-size:20px;">Thank you for joining Narwi</small>
+				       </div>
+			      </td> 
+			 </tr>
+			 <tr>
+				  <td style="padding:10px 10%;">
+				  	<p style="margin:0px auto;font-size:20px;max-width:700px;">You've now taken the first step toward helping a microentrepreneur start or grow a sustainable business. <Narwi-Waqf Dashboard>. </p>
+				  </td>
+			 </tr>
+			 <tr>
+				  <td style="padding:10px 10%;">
+				  	<p style="margin:0px auto;font-size:20px;max-width:700px;">the microentrepreneur you want to support. Your Narwi-Waqf is then provided to one of our Shariah Compliant Field Partners as a 0% loan from Narwi, which they then lend to the microentrepreneur you selected.</p>
+				  </td>
+			 </tr>
+			 <tr>
+				  <td style="padding:10px 10%;">
+				  	<p style="margin:0px auto;font-size:20px;max-width:700px;">As the microentrepreneur repays the loan to our Field Partner, your Narwi-Waqf is credited. You can then use this amount to fund another microentrepreneur, so your Narwi-Waqf has an ongoing, revolving impact extending far beyond your original gift. </p>
+				  </td>
+			 </tr>
+			 <tr>
+				  <td style="padding:10px 10%;">
+				  	<p style="margin:0px auto;font-size:20px;max-width:700px;font-weight:bold;">Now, let’s get you started! </p>
+				  </td>
+			 </tr>
+			 <tr>
+				  <td style="padding:10px 10% 20px;;">
+				  	<a href="<?= $this->client_url."accountActivate?id=".$this->random_number;?>" style="display:inline-block;padding:5px 20px;font-size:20px;text-decoration:none; color:#000000; background-color:#07acf6;border-radius:4px;color:#ffffff;">LOG ON</a>
+				  </td>
+			 </tr>
+			 <tr>
+				  <td style="padding:10px 10%;">
+				  	<p style="margin:0px auto;font-size:20px;max-width:700px;">and start your Narwi-Waqf in a matter of a few clicks.</p>
+				  </td>
+			 </tr>
+			 <tr>
+				  <td style="padding:10px 10%;">
+				  	<p style="margin:0px auto;font-size:20px;max-width:700px;">If you have any questions, you can reach us anytime at info@narwi.org. </p>
+				  </td>
+			 </tr>
+			 <tr>
+				  <td style="padding:10px 10%;">
+				  	<p style="color:#ff5340;margin:0px auto;font-size:20px;max-width:700px;">Blessed Giving! </p>
+				  </td>
+			 </tr>
+			 <tr>
+				  <td style="padding:10px 10%;">
+				  	<p style="margin:0px auto;font-size:20px;max-width:700px;">The Narwi Team </p>
+				  </td>
+			 </tr>
+			 <tr>
+				  <td style="padding:4px 10%;">
+				  	<p style="margin:0px auto;font-size:20px;max-width:700px;">We tell their stories. You help write them. </p>
+				  </td>
+			 </tr>
+			 <tr>
+				  <td style="padding:10px 10%;">
+				  	<p style="margin:0px auto;font-size:20px;max-width:700px;">Please help us spread the word </p>
+				  </td>
+			 </tr>
+			 <tr>
+				  <td style="padding:10px 10% 20px;;">
+				  	<a href="" style="display:inline-block;padding:10px 20px;border:1px solid #000000;font-size:20px;text-decoration:none;color:#000000;">SHARE THE GOOD NEWS</a>
+				  </td>
+			 </tr>
+			 <!-- footer -->
+			 <tr>
+				  <td style="background-color:#4d4d4d;padding:10px 10%;" >
+				  	<div style="display:inline-block;vertical-align:middle;">
+				  		<a  href=""><img style="width:30px;margin-right:10px;" src="<?= $this->client_url?>img/facebook_share.png"></a>
+				  		<a  href=""><img style="width:30px;margin-right:10px;" src="<?= $this->client_url?>img/twitter_share.png"></a>
+				  		<a  href=""><img style="width:30px;margin-right:10px;" src="<?= $this->client_url?>img/linkedin_share.png"></a>
+				  	</div>
+				  	<p style="display:inline-block;vertical-align:middle;color:#ffffff;">© 2015 Narwi.org. 
+				  	</p>
+				  </td>
+			 </tr>
+		</table>
+	</body>
+</html>

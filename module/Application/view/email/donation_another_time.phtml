@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- If you’re looking for the online demo, it’s here: http://mathiasbynens.be/demo/placeholder -->
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML5 placeholder jQuery Plugin</title>
+		<style>
+			body, input, textarea { font: 1em/1.4 Helvetica, Arial; }
+			label code { cursor: pointer; float: left; width: 150px; }
+			
+			
+			/* #p { background: lime; } */
+		</style>
+	</head>
+	
+	<body style="margin:0px;">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin:0 auto;text-align:center;border:1px solid #4d4d4d;">
+			<!-- header -->
+			 <tr>
+				  <td style="background-color:#4d4d4d;padding:10px 10%;" >
+				  	<div style="overflow:hidden;">
+				  		<a href="http://www.narwi.org" style="float:left;"><img src="<?= $this->client_url?>img/client_logo.png" ></a>
+				  		<!-- <a style="float:right;color:#ffffff;font-size:16px;padding:14px;text-decoration:none;" href="">View in Browser</a> -->
+				  	</div>
+				  </td>
+			 </tr>
+			 <!-- header ending -->
+			 <tr>
+				  <td style="padding:10px 10%;">
+				  	<h2 style="margin:0px;font-size:30px;">HI <span style="text-transform:uppercase;"><?= $this->transaction['user']['fullName'];?></span></h2>
+				  </td>
+			 </tr>
+			 <tr>
+				  <td style="padding:10px 10%;">
+				  	<p style="color:#ff5340;margin:0px auto;font-size:22px;max-width:700px;">Thank you for issuing another Narwi Waqf!</p>
+				  </td>
+			 </tr>
+			 <tr>
+				  <td style="padding:10px 10%;">
+				  	<p style="margin:0px auto;font-size:20px;max-width:700px;">We’ll be sending you update emails and crediting your Narwi-Waqf as <?= $this->transaction['loan']['name'];?> makes repayments to <?= $this->transaction['loan']['partner']['name'];?>. To review your overall impact, you can explore the <a href="<?= $this->client_url ?>" style="text-decoration:none;color:#07acf6;">Narwi-Waqf Dashboard</a>. </p>
+				  </td>
+			 </tr>
+			 <tr>
+				  <td style="padding:10px 10%;">
+				  	<p style="margin:0px auto;font-size:20px;max-width:700px;">You can take another step and help us spread the word. <Share> your Narwi-Waqf online and encourage your friends to start theirs as well. </p>
+				  </td>
+			 </tr>
+			 <tr>
+				  <td style="padding:10px 10%;">
+				  	<p style="margin:0px auto;font-size:20px;max-width:700px;">We hope you enjoyed your experience on Narwi and issue another Narwi-Waqf very soon.  </p>
+				  </td>
+			 </tr>
+			 <tr>
+				  <td style="padding:10px 10%;">
+				  	<p style="color:#ff5340;margin:0px auto;font-size:20px;max-width:700px;">Blessed Giving! </p>
+				  </td>
+			 </tr>
+			 <tr>
+				  <td style="padding:10px 10%;">
+				  	<p style="margin:0px auto;font-size:20px;max-width:700px;">The Narwi Team </p>
+				  </td>
+			 </tr>
+			 <tr>
+				  <td style="padding:4px 10%;">
+				  	<p style="margin:0px auto;font-size:20px;max-width:700px;">We tell their stories. You help write them. </p>
+				  </td>
+			 </tr>
+			 <tr>
+				  <td style="padding:10px 10%;">
+				  	<p style="margin:0px auto;font-size:20px;max-width:700px;">Please help us spread the word </p>
+				  </td>
+			 </tr>
+			  <tr>
+				  <td style="padding:10px 10% 20px;;">
+				  	<a href="" style="display:inline-block;padding:10px 20px;border:1px solid #000000;font-size:20px;text-decoration:none;color:#000000;">SHARE THE GOOD NEWS</a>
+				  </td>
+			 </tr>
+			 <!-- footer -->
+			 <tr>
+				  <td style="background-color:#4d4d4d;padding:10px 10%;" >
+				  	<div style="display:inline-block;vertical-align:middle;">
+				  		<a  href=""><img style="width:30px;margin-right:10px;" src="<?= $this->client_url?>img/facebook_share.png"></a>
+				  		<a  href=""><img style="width:30px;margin-right:10px;" src="<?= $this->client_url?>img/twitter_share.png"></a>
+				  		<a  href=""><img style="width:30px;margin-right:10px;" src="<?= $this->client_url?>img/linkedin_share.png"></a>
+				  	</div>
+				  	<p style="display:inline-block;vertical-align:middle;color:#ffffff;">© 2015 Narwi.org. 
+				  	<!-- <span style="color:#07acf6;"><a style="color:#07acf6;text-decoration:none;" href="">Unsubscribe</a> | <a style="color:#07acf6;text-decoration:none;" href="">Update email reference</a></span> -->
+				  	</p>
+				  </td>
+			 </tr>
+		</table>
+	</body>
+</html>
